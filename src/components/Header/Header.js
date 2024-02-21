@@ -45,8 +45,8 @@ export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
-        <header className="relative isolate z-10 bg-white">
-            <nav className="mx-auto flex items-center justify-between" aria-label="Global">
+        <header className="relative isolate z-10">
+            <nav className="mx-auto flex items-center justify-between bg-red" aria-label="Global">
                 <div className="flex lg:flex-1">
                     <div className='deuNavDefaultLogo w-[293px] h-[63px]'></div>
                 </div>
@@ -60,13 +60,8 @@ export default function Header() {
                         <Bars3Icon className="h-6 w-6" aria-hidden="true" />
                     </button>
                 </div>
-                <Popover.Group className="hidden lg:flex h-[88px] leading-6 py-8">
+                <Popover.Group className="hidden lg:flex h-[88px] leading-6">
                     <Popover>
-                        <Popover.Button className="mx-[35px] flex items-center gap-x-1 text-[20px] leading-6 text-gray-900">
-                            사업단소개
-                            <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
-                        </Popover.Button>
-
                         <Transition
                             as={Fragment}
                             enter="transition ease-out duration-200"
@@ -76,61 +71,72 @@ export default function Header() {
                             leaveFrom="opacity-100 translate-y-0"
                             leaveTo="opacity-0 -translate-y-1"
                         >
-                            <Popover.Panel className="absolute inset-x-0 top-0 -z-10 bg-white pt-14 shadow-lg ring-1 ring-gray-900/5">
-                                <div className="mx-auto grid max-w-7xl grid-cols-4 gap-x-4 px-6 py-10 lg:px-8 xl:gap-x-8">
-                                    {products.map((item) => (
-                                        <div key={item.name} className="group relative rounded-lg p-6 text-sm leading-6 hover:bg-gray-50">
-                                            <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                                                <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
-                                            </div>
-                                            <a href={item.href} className="mt-6 block font-semibold text-gray-900">
-                                                {item.name}
-                                                <span className="absolute inset-0" />
-                                            </a>
-                                            <p className="mt-1 text-gray-600">{item.description}</p>
-                                        </div>
-                                    ))}
-                                </div>
-                                <div className="bg-gray-50">
-                                    <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                                        <div className="grid grid-cols-3 divide-x divide-gray-900/5 border-x border-gray-900/5">
-                                            {callsToAction.map((item) => (
-                                                <a
-                                                    key={item.name}
-                                                    href={item.href}
-                                                    className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
-                                                >
-                                                    <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
-                                                    {item.name}
-                                                </a>
-                                            ))}
-                                        </div>
-                                    </div>
-                                </div>
-                            </Popover.Panel>
                         </Transition>
                     </Popover>
-
-                    <a href="#" className="mx-[35px] text-[20px] leading-6 text-gray-900">
-                        참여기업현황
-                    </a>
-                    <a href="#" className="mx-[35px] text-[20px] leading-6 text-gray-900">
-                        학과소개
-                    </a>
-                    <a href="#" className="mx-[35px] text-[20px] leading-6 text-gray-900">
-                        입학안내
-                    </a><a href="#" className="mx-[35px] text-[20px] leading-6 text-gray-900">
-                        창의융합교육센터
-                    </a>
-                    <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                        <a href="#" className="mx-[35px] text-[20px] leading-6 text-gray-900">
-                            <span aria-hidden="true">커뮤니티</span>
+                    <ul>
+                        <a href="" className="">
+                            <li className='mx-[35px] py-8 text-[20px] leading-6 text-gray-900'>참여기업현황</li>
                         </a>
-                    </div>
+                        <div className=''>
+                            <a><li>인사말</li></a>
+                            <a><li>조기취업형 계약학과 소개</li></a>
+                            <a><li>구성원 소개</li></a>
+                        </div>
+                    </ul>
+                    <ul>
+                        <a href="#" className="">
+                            <li className='mx-[35px] py-8 text-[20px] leading-6 text-gray-900'>참여기업현황</li>
+                        </a>
+                        <div className=''>
+                            <a><li>인사말</li></a>
+                            <a><li>조기취업형 계약학과 소개</li></a>
+                            <a><li>구성원 소개</li></a>
+                        </div>
+                    </ul>
+                    <ul>
+                        <a href="#" className="">
+                            <li className='mx-[35px] py-8 text-[20px] leading-6 text-gray-900'>참여기업현황</li>
+
+                        </a>
+                        <div className=''>
+                            <a><li>인사말</li></a>
+                            <a><li>조기취업형 계약학과 소개</li></a>
+                            <a><li>구성원 소개</li></a>
+                        </div>
+                    </ul>
+                    <ul>
+                        <a href="#" className="">
+                            <li className='mx-[35px] py-8 text-[20px] leading-6 text-gray-900'>참여기업현황</li>
+                        </a>
+                        <div className=''>
+                            <a><li>인사말</li></a>
+                            <a><li>조기취업형 계약학과 소개</li></a>
+                            <a><li>구성원 소개</li></a>
+                        </div>
+                    </ul>
+                    <ul>
+                        <a href="#" className="">
+                            <li className='mx-[35px] py-8 text-[20px] leading-6 text-gray-900'>참여기업현황</li>
+                        </a>
+                        <div className=''>
+                            <a><li>인사말</li></a>
+                            <a><li>조기취업형 계약학과 소개</li></a>
+                            <a><li>구성원 소개</li></a>
+                        </div>
+                    </ul>
+                    <ul>
+                        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+                            <a href="#" className="">
+                                <li className='mx-[35px] py-8 text-[20px] leading-6 text-gray-900'>참여기업현황</li>
+                            </a>
+                        </div>
+                        <div className=''>
+                            <a><li>인사말</li></a>
+                            <a><li>조기취업형 계약학과 소개</li></a>
+                            <a><li>구성원 소개</li></a>
+                        </div>
+                    </ul>
                 </Popover.Group>
-
-
-
             </nav>
             <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
                 <div className="fixed inset-0 z-10" />
