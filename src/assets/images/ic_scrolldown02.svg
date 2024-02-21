@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="ic_scrolldown02" transform="translate(-372 -293)">
+    <g id="그룹_27906" data-name="그룹 27906" transform="translate(388.064 298.921) rotate(90)">
+      <path id="패스_1070" data-name="패스 1070" d="M0,9.064a.748.748,0,0,1-.53-.22.75.75,0,0,1,0-1.061L3.1,4.157-.53.53A.75.75,0,0,1-.53-.53.75.75,0,0,1,.53-.53L4.688,3.627a.75.75,0,0,1,0,1.061L.53,8.845A.748.748,0,0,1,0,9.064Z" transform="translate(0)" fill="rgba(255,255,255,0.69)"/>
+    </g>
+    <g id="그룹_27961" data-name="그룹 27961" transform="translate(388.064 304.921) rotate(90)">
+      <path id="패스_1070-2" data-name="패스 1070" d="M0,9.064a.748.748,0,0,1-.53-.22.75.75,0,0,1,0-1.061L3.1,4.157-.53.53A.75.75,0,0,1-.53-.53.75.75,0,0,1,.53-.53L4.688,3.627a.75.75,0,0,1,0,1.061L.53,8.845A.748.748,0,0,1,0,9.064Z" transform="translate(0)" fill="#fff"/>
+    </g>
+    <g id="사각형_13051" data-name="사각형 13051" transform="translate(372 293)" fill="none" stroke="#707070" stroke-width="1" opacity="0">
+      <rect width="24" height="24" stroke="none"/>
+      <rect x="0.5" y="0.5" width="23" height="23" fill="none"/>
+    </g>
+  </g>
+</svg>

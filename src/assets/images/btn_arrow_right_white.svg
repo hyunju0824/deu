@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="btn_arrow_right_white" transform="translate(-1624 -2176)">
+    <g id="사각형_550" data-name="사각형 550" transform="translate(1624 2176)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0">
+      <rect width="24" height="24" stroke="none"/>
+      <rect x="0.5" y="0.5" width="23" height="23" fill="none"/>
+    </g>
+    <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back" d="M2.1,6.093,6.713,1.485A.871.871,0,0,0,5.479.254L.254,5.476a.869.869,0,0,0-.025,1.2l5.247,5.258a.871.871,0,0,0,1.234-1.23Z" transform="translate(1639.484 2194.094) rotate(180)" fill="#fff"/>
+  </g>
+</svg>

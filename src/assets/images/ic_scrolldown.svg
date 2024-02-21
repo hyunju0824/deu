@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="67" viewBox="0 0 36 67">
+  <g id="ic_scrolldown" transform="translate(-942 -928)">
+    <g id="그룹_27962" data-name="그룹 27962" transform="translate(0 -70)">
+      <g id="그룹_27960" data-name="그룹 27960" transform="translate(32 2)">
+        <g id="사각형_320" data-name="사각형 320" transform="translate(918 1003)" fill="none" stroke="#fff" stroke-width="1.5">
+          <rect width="21" height="31" rx="10" stroke="none"/>
+          <rect x="0.75" y="0.75" width="19.5" height="29.5" rx="9.25" fill="none"/>
+        </g>
+
+        <path id="패스_2058" data-name="패스 2058" d="M14076.5-5041.036a.742.742,0,0,1-.75-.732v-4.035a.742.742,0,0,1,.75-.733.742.742,0,0,1,.75.733v4.035A.742.742,0,0,1,14076.5-5041.036Z" transform="translate(-13148 6054)" fill="#fff"/>
+      
+      </g>
+      <!-- <g id="그룹_27906" data-name="그룹 27906" transform="translate(964.657 1046.921) rotate(90)">
+        <path id="패스_1070" data-name="패스 1070" d="M0,9.064a.748.748,0,0,1-.53-.22.75.75,0,0,1,0-1.061L3.1,4.157-.53.53A.75.75,0,0,1-.53-.53.75.75,0,0,1,.53-.53L4.688,3.627a.75.75,0,0,1,0,1.061L.53,8.845A.748.748,0,0,1,0,9.064Z" transform="translate(0)" fill="rgba(255,255,255,0.69)"/>
+      </g> -->
+      <!-- <g id="그룹_27961" data-name="그룹 27961" transform="translate(964.657 1052.921) rotate(90)">
+        <path id="패스_1070-2" data-name="패스 1070" d="M0,9.064a.748.748,0,0,1-.53-.22.75.75,0,0,1,0-1.061L3.1,4.157-.53.53A.75.75,0,0,1-.53-.53.75.75,0,0,1,.53-.53L4.688,3.627a.75.75,0,0,1,0,1.061L.53,8.845A.748.748,0,0,1,0,9.064Z" transform="translate(0)" fill="#fff"/>
+      </g> -->
+    </g>
+    <g id="사각형_13051" data-name="사각형 13051" transform="translate(942 928)" fill="none" stroke="#707070" stroke-width="1" opacity="0">
+      <rect width="36" height="67" stroke="none"/>
+      <rect x="0.5" y="0.5" width="35" height="66" fill="none"/>
+    </g>
+  </g>
+</svg>

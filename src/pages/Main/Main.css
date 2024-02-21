@@ -1,0 +1,38 @@
+/* main */
+
+
+/* 배경 이미지 */
+.main_banner_01 {
+    background-image: url(../../assets/images/mainBanner_01.png);
+    background-size: cover;
+}
+
+/* 좌우 컨트롤러 버튼 */
+.btn_arrow_left {
+    background-image: url(../../assets/images/btn_arrow_left_white.svg);
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.btn_arrow_right {
+    background-image: url(../../assets/images/btn_arrow_right_white.svg);
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+/* 마우스 아이콘 ic_scrolldown */
+
+.ic_scrolldown {
+    width: 36px;
+    height: 43px;
+    background: transparent url('../../assets/images/ic_scrolldown.svg') 0% 0% no-repeat padding-box;
+}
+
+.ic_scrolldown02 {
+    width: 24px;
+    height: 24px;
+    background: transparent url('../../assets/images/ic_scrolldown02.svg') 0% 0% no-repeat padding-box;
+
+}
