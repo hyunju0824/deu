@@ -5,6 +5,7 @@ import Main from './pages/Main/Main';
 import Header from './components/Header/Header';
 import './App.css';
 import './assets/css/font.css'
+import '../src/components/Header/Header.css'
 
 
 function App() {
