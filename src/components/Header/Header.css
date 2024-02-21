@@ -1,4 +1,6 @@
 .deuNavDefaultLogo {
     background-image: url('../../assets/images/deuNavDefaultLogo.png');
     background-size: cover;
+    width: 293px;
+    height: 63px;
 }

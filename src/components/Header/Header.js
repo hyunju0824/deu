@@ -45,22 +45,23 @@ export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
-        <header className="relative isolate z-10">
+        <header className="relative isolate z-10 ">
             <nav className="mx-auto flex items-center justify-between bg-red" aria-label="Global">
                 <div className="flex lg:flex-1">
-                    <div className='deuNavDefaultLogo w-[293px] h-[63px]'></div>
-                </div>
-                <div className="flex lg:hidden">
-                    <button
-                        type="button"
-                        className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-                        onClick={() => setMobileMenuOpen(true)}
-                    >
-                        <span className="sr-only">Open main menu</span>
-                        <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-                    </button>
-                </div>
-                <Popover.Group className="hidden lg:flex h-[88px] leading-6">
+                    <div className="flex lg:flex-1 h-[88px]">
+                        <div className='deuNavDefaultLogo my-auto'></div>
+                    </div>
+                    <div className="flex lg:hidden">
+                        <button
+                            type="button"
+                            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+                            onClick={() => setMobileMenuOpen(true)}
+                        >
+                            <span className="sr-only">Open main menu</span>
+                            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+                        </button>
+                    </div>
+                    {/* <Popover.Group className="hidden lg:flex h-[88px] leading-6"> */}
                     <Popover>
                         <Transition
                             as={Fragment}
@@ -73,12 +74,12 @@ export default function Header() {
                         >
                         </Transition>
                     </Popover>
-                    <ul>
+                    <ul className=''>
                         <a href="" className="">
-                            <li className='mx-[35px] py-8 text-[20px] leading-6 text-gray-900'>참여기업현황</li>
+                            <li className='mx-[35px] py-8 text-[20px] leading-6 text-gray-900'>사업단소개</li>
                         </a>
-                        <div className=''>
-                            <a><li>인사말</li></a>
+                        <div className='leading-[56px]'>
+                            <a><li className=''>인사말</li></a>
                             <a><li>조기취업형 계약학과 소개</li></a>
                             <a><li>구성원 소개</li></a>
                         </div>
@@ -87,56 +88,54 @@ export default function Header() {
                         <a href="#" className="">
                             <li className='mx-[35px] py-8 text-[20px] leading-6 text-gray-900'>참여기업현황</li>
                         </a>
-                        <div className=''>
-                            <a><li>인사말</li></a>
-                            <a><li>조기취업형 계약학과 소개</li></a>
-                            <a><li>구성원 소개</li></a>
+                        <div className='leading-10'>
+                            <a><li>참여기업현황</li></a>
                         </div>
                     </ul>
                     <ul>
                         <a href="#" className="">
-                            <li className='mx-[35px] py-8 text-[20px] leading-6 text-gray-900'>참여기업현황</li>
-
+                            <li className='mx-[35px] py-8 text-[20px] leading-6 text-gray-900'>학과소개</li>
                         </a>
-                        <div className=''>
-                            <a><li>인사말</li></a>
-                            <a><li>조기취업형 계약학과 소개</li></a>
-                            <a><li>구성원 소개</li></a>
+                        <div className='leading-10'>
+                            <a><li>학과소개</li></a>
                         </div>
                     </ul>
                     <ul>
                         <a href="#" className="">
-                            <li className='mx-[35px] py-8 text-[20px] leading-6 text-gray-900'>참여기업현황</li>
+                            <li className='mx-[35px] py-8 text-[20px] leading-6 text-gray-900'>입학안내</li>
                         </a>
-                        <div className=''>
-                            <a><li>인사말</li></a>
-                            <a><li>조기취업형 계약학과 소개</li></a>
-                            <a><li>구성원 소개</li></a>
+                        <div className='leading-10'>
+                            <a><li>신입생 모집요강</li></a>
+                            <a><li>장학 및 지원 혜택</li></a>
+                            <a><li>FAQ</li></a>
+                            <a><li>입학상담 Q&A</li></a>
+                            <a><li>입학설명회</li></a>
                         </div>
                     </ul>
                     <ul>
-                        <a href="#" className="">
-                            <li className='mx-[35px] py-8 text-[20px] leading-6 text-gray-900'>참여기업현황</li>
-                        </a>
-                        <div className=''>
-                            <a><li>인사말</li></a>
-                            <a><li>조기취업형 계약학과 소개</li></a>
-                            <a><li>구성원 소개</li></a>
-                        </div>
-                    </ul>
-                    <ul>
-                        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
                             <a href="#" className="">
-                                <li className='mx-[35px] py-8 text-[20px] leading-6 text-gray-900'>참여기업현황</li>
+                                <li className='mx-[35px] py-8 text-[20px] leading-6 text-gray-900'>창의융합교육센터</li>
                             </a>
-                        </div>
-                        <div className=''>
-                            <a><li>인사말</li></a>
-                            <a><li>조기취업형 계약학과 소개</li></a>
-                            <a><li>구성원 소개</li></a>
+                        <div className='leading-10'>
+                            <a><li>창의융합교육센터</li></a>
                         </div>
                     </ul>
-                </Popover.Group>
+                    <ul>
+                    <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+
+                        <a href="#" className="">
+                            <li className='mx-[35px] py-8 text-[20px] leading-6 text-gray-900'>커뮤니티</li>
+                        </a>
+                        </div>
+
+                        <div className=''>
+                            <a><li>사업단 소식</li></a>
+                            <a><li>공지사항</li></a>
+                            <a><li>문의하기</li></a>
+                        </div>
+                    </ul>
+                    {/* </Popover.Group> */}
+                </div>
             </nav>
             <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
                 <div className="fixed inset-0 z-10" />

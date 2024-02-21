@@ -36,3 +36,16 @@
     background: transparent url('../../assets/images/ic_scrolldown02.svg') 0% 0% no-repeat padding-box;
 
 }
+
+/* introduce */
+.introduce1 {
+    background-image: url('../../assets/images/introduce1.png');
+    background-size: cover;
+    border-radius: 12px
+}
+.introduce2 {
+    background-image: url('../../assets/images/introduce1.png');
+}
+.introduce3 {
+    background-image: url('../../assets/images/introduce1.png');
+}
