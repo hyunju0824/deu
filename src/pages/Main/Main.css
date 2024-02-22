@@ -6,6 +6,18 @@
     background-image: url(../../assets/images/mainBanner_01.png);
     background-size: cover;
 }
+.main_banner_02 {
+    background-image: url(../../assets/images/mainBanner_02.png);
+    background-size: cover;
+}
+.main_banner_03 {
+    background-image: url(../../assets/images/mainBanner_03.png);
+    background-size: cover;
+}
+.main_banner_04 {
+    background-image: url(../../assets/images/mainBanner_04.png);
+    background-size: cover;
+}
 
 /* 좌우 컨트롤러 버튼 */
 .btn_arrow_left {
@@ -44,8 +56,34 @@
     border-radius: 12px
 }
 .introduce2 {
-    background-image: url('../../assets/images/introduce1.png');
+    background-image: url('../../assets/images/introduce2.png');
+    background-size: cover;
+    border-radius: 12px
 }
 .introduce3 {
-    background-image: url('../../assets/images/introduce1.png');
+    background-image: url('../../assets/images/introduce3.png');
+    background-size: cover;
+    border-radius: 12px
+}
+
+/* news */
+.news1 {
+    background-image: url('../../assets/images/news1.png');
+    background-size: cover;
+    border-radius: 12px;
+}
+.news2 {
+    background-image: url('../../assets/images/news2.jpeg');
+    background-size: cover;
+    border-radius: 12px;
+}
+.news3 {
+    background-image: url('../../assets/images/news3.jpeg');
+    background-size: cover;
+    border-radius: 12px;
+}
+.news4 {
+    background-image: url('../../assets/images/news4.jpeg');
+    background-size: cover;
+    border-radius: 12px;
 }
