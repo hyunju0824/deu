@@ -9,6 +9,8 @@ import './assets/css/font.css'
 import '../src/components/Header/Header.css'
 import Footer from './components/Footer/Footer';
 import './components/Footer/Footer.css'
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 
 function App() {
