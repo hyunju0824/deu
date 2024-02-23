@@ -45,7 +45,7 @@ export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
-        <header className="relative isolate z-10 ">
+        <header className="relative isolate z-10 hidden">
             <nav className="mx-auto flex items-center justify-between bg-red" aria-label="Global">
                 <div className="flex lg:flex-1">
                     <div className="flex lg:flex-1 h-[88px]">

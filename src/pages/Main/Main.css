@@ -26,6 +26,12 @@
     width: 24px;
     height: 24px;
 }
+.btn_arrow_left2 {
+    background-image: url(../../assets/images/btn_arrow_left_white2.svg);
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
 
 .btn_arrow_right {
     background-image: url(../../assets/images/btn_arrow_right_white.svg);
