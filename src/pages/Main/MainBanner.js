@@ -1,25 +1,23 @@
+import React, {useRef} from "react";
 import Slider from "react-slick";
 
-// 좌 슬라이드 버튼 컴포넌트
-function BtnArrowLeft(props) {
-    const { className, style, onClick } = props;
-    return (
-        <div
-            className={`${className} btn_arrow_left`}
-            // 부모 컴포넌트로부터 전달받은 스타일
-            style={{ ...style , display: "block"}}
-            onClick={onClick}
-        />
-    );
-}
-
 export default function MainBanner() {
+
+    const sliderRef = useRef();
+
+    const next = () => {
+        sliderRef.current.slickNext();
+      }
+    
+      const previous = () => {
+        sliderRef.current.slickPrev();
+      }
+
     var setting = {
         infinite: true,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        prevArrow: <BtnArrowLeft />,
     };
 
     const slides = [
@@ -31,7 +29,7 @@ export default function MainBanner() {
 
     return (
         <div>
-            <Slider {...setting}>
+           <Slider ref={sliderRef} {...setting}>
                 {slides.map((slide, index) => (
                 <div key={index} className={`h-screen ${slide.mbImage}`}>
                     {/* 메인배너 마진 */}
@@ -41,13 +39,12 @@ export default function MainBanner() {
                             <div className="text-lg">01</div>
                             <div className="px-4">——</div>
                             <div className="text-lg">04</div>
-                            {/* <div 
-                            className={` ml-5 mr-1 ${className} btn_arrow_left`}
-                            onClick={onClick}
+                            <button
+                            className={` ml-5 mr-1 btn_arrow_left`}
+                            onClick={previous}
                             >
-
-                            </div> */}
-                            <div className="btn_arrow_right"></div>
+                            </button>
+                            <button className="btn_arrow_right" onClick={next}></button>
                         </div>
                         <div className="pt-7 pb-4 text-64 leading-[84px]">
                             <p>미래산업의 중심</p>
