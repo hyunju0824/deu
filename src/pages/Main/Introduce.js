@@ -1,4 +1,9 @@
+import React, {useRef, useState } from "react"
+
 export default function Introduce() {
+    
+    
+
     return(
         <div>
             {/* Introduce 조기취업형 계약학과 소개 */ }
