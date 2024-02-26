@@ -41,7 +41,7 @@ export default function MainBanner() {
             text1: "4차 산업 시대를",
             text2: "선도하는 소프트웨어 융합학과",
             text3: "빅데이터, 스마트 팩토리, 사물인터넷 등 4차산업 필수 기술을",
-            text4: "효율적으로 익히는 전문 교육과정 제공을 제공합니다.",
+            text4: "효율적으로 익히는 전문 교육과정을 제공합니다.",
             bannerBtn: "btn_arrow_left2",
         },
         {
