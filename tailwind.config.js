@@ -36,7 +36,10 @@ module.exports = {
         extrabold: '800',
         'extra-bold': '800',
         black: '900',
-      }
+      },
+      colors: {
+        'black-40': 'rgba(0, 0, 0, 0.4)',
+      },
     },
   },
   plugins: [],

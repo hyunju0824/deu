@@ -73,7 +73,7 @@ export default function MainBanner() {
                 ))}
             </Slider>
             {/* 메인배너 마진 */}
-            <div className="mx-200 pt-250 2xl:pb-[310px] pb-[180px] text-left text-white absolute top-0">
+            <div className="mx-200 md:pt-[200px] 2xl:pt-[300px] 2xl:pb-[310px] pb-[180px] text-left text-white absolute top-0">
                 {/* 메인 배너 글자 */}
                 <div className="flex items-center font-bold">
                     <div className="text-lg w-[24px]">{slides[currentSlide].bannerNum}</div>

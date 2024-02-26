@@ -1,4 +1,4 @@
-import { Fragment, useState } from 'react'
+import React, { Fragment, useState } from 'react'
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import {
     Bars3Icon,
@@ -45,8 +45,8 @@ export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
-        <header className="group relative sticky top-0 isolate z-10 2xl:px-[200px]">
-            <nav className=" mx-auto flex items-center justify-between bg-red" aria-label="Global">
+        <header className="group relative sticky top-0 isolate z-10">
+            <nav className="absolute 2xl:px-[200px] left-0 flex items-center justify-between bg-black-40 w-full hover:bg-white" aria-label="Global">
                 <div className="flex lg:flex-1">
                     <div className="flex lg:flex-1 h-[88px]">
                         <div className='deuNavDefaultLogo my-auto'></div>
@@ -76,7 +76,7 @@ export default function Header() {
                     </Popover>
                         <ul className=''>
                             <a href="" className="">
-                                <li className='mx-[50px] py-8 text-[20px] leading-6 text-gray-900'>사업단소개</li>
+                                <li className='mx-[50px] py-8 text-[20px] leading-6 text-white group-hover:text-black'>사업단소개</li>
                             </a>
                             <div className='leading-[56px] hidden group-hover:block'>
                                 <a><li className='pt-[16px]'>인사말</li></a>
@@ -86,7 +86,7 @@ export default function Header() {
                         </ul>
                         <ul>
                             <a href="#" className="">
-                                <li className='mx-[50px] py-8 text-[20px] leading-6 text-gray-900'>참여기업현황</li>
+                                <li className='mx-[50px] py-8 text-[20px] leading-6 text-white group-hover:text-black'>참여기업현황</li>
                             </a>
                             <div className='leading-[56px] hidden group-hover:block'>
                                 <a><li className='pt-[16px]'>참여기업현황</li></a>
@@ -94,7 +94,7 @@ export default function Header() {
                         </ul>
                         <ul>
                             <a href="#" className="">
-                                <li className='mx-[50px] py-8 text-[20px] leading-6 text-gray-900'>학과소개</li>
+                                <li className='mx-[50px] py-8 text-[20px] leading-6 text-white group-hover:text-black'>학과소개</li>
                             </a>
                             <div className='leading-[56px] hidden group-hover:block'>
                                 <a><li className='pt-[16px]'>학과소개</li></a>
@@ -102,7 +102,7 @@ export default function Header() {
                         </ul>
                         <ul>
                             <a href="#" className="">
-                                <li className='mx-[50px] py-8 text-[20px] leading-6 text-gray-900'>입학안내</li>
+                                <li className='mx-[50px] py-8 text-[20px] leading-6 text-white group-hover:text-black'>입학안내</li>
                             </a>
                             <div className='leading-[56px] hidden group-hover:block'>
                                 <a><li className='pt-[16px]'>신입생 모집요강</li></a>
@@ -114,7 +114,7 @@ export default function Header() {
                         </ul>
                         <ul>
                             <a href="#" className="">
-                                <li className='mx-[50px] py-8 text-[20px] leading-6 text-gray-900'>창의융합교육센터</li>
+                                <li className='mx-[50px] py-8 text-[20px] leading-6 text-white group-hover:text-black'>창의융합교육센터</li>
                             </a>
                             <div className='leading-[56px] hidden group-hover:block'>
                                 <a><li className='pt-[16px]'>창의융합교육센터</li></a>
@@ -123,7 +123,7 @@ export default function Header() {
                         <ul>
                             <div className="hidden lg:flex lg:flex-1 lg:justify-end">
                                 <a href="#" className="">
-                                    <li className='mx-[50px] py-8 text-[20px] leading-6 text-gray-900'>커뮤니티</li>
+                                    <li className='mx-[50px] py-8 text-[20px] leading-6 text-white group-hover:text-black'>커뮤니티</li>
                                 </a>
                             </div>
                             <div className='leading-[56px] hidden group-hover:block'>
