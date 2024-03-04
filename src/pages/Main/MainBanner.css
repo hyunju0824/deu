@@ -1,0 +1,29 @@
+/* .slick-dots {
+  position: relative;
+  z-index: 5;
+  bottom: 104px !important;
+  background: #000;
+}
+
+.slick-dots li {
+  width: 15px;
+  margin: 0;
+}
+
+.slick-dots li button:before {
+  font-size: 6px;
+  color: white;
+  opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+  color: blue;
+  border: 1px solid white;
+  border-radius: 50%;
+} */
+
+.my-custom-dot {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}

@@ -6,14 +6,17 @@
     background-image: url(../../assets/images/mainBanner_01.png);
     background-size: cover;
 }
+
 .main_banner_02 {
     background-image: url(../../assets/images/mainBanner_02.png);
     background-size: cover;
 }
+
 .main_banner_03 {
     background-image: url(../../assets/images/mainBanner_03.png);
     background-size: cover;
 }
+
 .main_banner_04 {
     background-image: url(../../assets/images/mainBanner_04.png);
     background-size: cover;
@@ -26,6 +29,7 @@
     width: 24px;
     height: 24px;
 }
+
 .btn_arrow_left2 {
     background-image: url(../../assets/images/btn_arrow_left_white2.svg);
     background-size: cover;
@@ -40,19 +44,37 @@
     height: 24px;
 }
 
-/* 마우스 아이콘 ic_scrolldown */
+/* 마우스 아이콘 */
 
-.ic_scrolldown {
-    width: 36px;
-    height: 43px;
-    background: transparent url('../../assets/images/ic_scrolldown.svg') 0% 0% no-repeat padding-box;
+@keyframes moveDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(15px);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.scroller {
+    animation: moveDown 2s linear infinite, fadeOut 2s linear infinite;
 }
 
 .ic_scrolldown02 {
+    background-image: url('../../assets/images/ic_scrolldown02.svg');
+    background-size: cover;
     width: 24px;
     height: 24px;
-    background: transparent url('../../assets/images/ic_scrolldown02.svg') 0% 0% no-repeat padding-box;
-
 }
 
 /* introduce */
@@ -61,11 +83,13 @@
     background-size: cover;
     border-radius: 12px
 }
+
 .introduce2 {
     background-image: url('../../assets/images/introduce2.png');
     background-size: cover;
     border-radius: 12px
 }
+
 .introduce3 {
     background-image: url('../../assets/images/introduce3.png');
     background-size: cover;
@@ -78,37 +102,44 @@
     background-size: cover;
     border-radius: 12px;
 }
+
 .news2 {
     background-image: url('../../assets/images/news2.jpeg');
     background-size: cover;
     border-radius: 12px;
 }
+
 .news3 {
     background-image: url('../../assets/images/news3.jpeg');
     background-size: cover;
     border-radius: 12px;
 }
+
 .news4 {
     background-image: url('../../assets/images/news4.jpeg');
     background-size: cover;
     border-radius: 12px;
 }
-    /* news 작대기 */
+
+/* news 작대기 */
 .new_bar1 {
     width: 25%;
     height: 2px;
     background: #414141;
 }
+
 .new_bar2 {
     width: 50%;
     height: 2px;
     background: #414141;
 }
+
 .new_bar3 {
     width: 75%;
     height: 2px;
     background: #414141;
 }
+
 .new_bar4 {
     width: 100%;
     height: 2px;

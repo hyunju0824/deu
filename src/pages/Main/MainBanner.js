@@ -1,28 +1,32 @@
 import React, { useRef, useState } from "react";
 import Slider from "react-slick";
+import "./MainBanner.css";
 
 export default function MainBanner() {
-
     const sliderRef = useRef();
     const [currentSlide, setCurrentSlide] = useState(0);
 
     const next = () => {
         sliderRef.current.slickNext();
-    }
+    };
 
     const previous = () => {
         sliderRef.current.slickPrev();
-    }
+    };
 
     var setting = {
         infinite: true,
+        dots: window.innerWidth <= 768 ? true : false,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
         // 자동 재생 옵션 추가
         autoplay: true,
         autoplaySpeed: 5000,
-        beforeChange: (current, next) => setCurrentSlide(next)
+        beforeChange: (current, next) => setCurrentSlide(next),
+        customPaging: function (i) {
+            return <div className="my-custom-dot">{i + 1}</div>;
+        },
     };
 
     const slides = [
@@ -62,38 +66,47 @@ export default function MainBanner() {
             text4: "현장 중심의 스마트호스피탈리티 인재를 육성합니다.",
             bannerBtn: "btn_arrow_left2",
         },
-    ]
+    ];
 
     return (
         <div>
             <Slider ref={sliderRef} {...setting}>
                 {slides.map((slide, index) => (
-                    <div key={index} className={`h-screen relative ${slide.mbImage}`}>
-                    </div>
+                    <div
+                        key={index}
+                        className={`h-[500px] w-full lg:h-screen relative ${slide.mbImage}`}
+                    ></div>
                 ))}
             </Slider>
             {/* 메인배너 마진 */}
-            <div className="mx-200 md:pt-[200px] 2xl:pt-[300px] 2xl:pb-[310px] pb-[180px] text-left text-white absolute top-0">
+            <div className="mx-4 lg:mx-200 pt-[100px] md:pt-[200px] 2xl:pt-[300px] 2xl:pb-[310px] pb-[180px] text-left text-white absolute top-0">
                 {/* 메인 배너 글자 */}
                 <div className="flex items-center font-bold">
-                    <div className="text-lg w-[24px]">{slides[currentSlide].bannerNum}</div>
+                    <div className="text-[14px] md:text-lg w-[24px]">
+                        {slides[currentSlide].bannerNum}
+                    </div>
                     <div className="px-4">——</div>
-                    <div className="text-lg w-[24px]">04</div>
-                    <button className={` ml-5 mr-1 ${slides[currentSlide].bannerBtn}`} onClick={previous}></button>
-                    <button className="btn_arrow_right" onClick={next}></button>
+                    <div className="text-[14px] md:text-lg w-[24px]">04</div>
+                    <button
+                        className={`hidden md:block ml-5 mr-1 ${slides[currentSlide].bannerBtn}`}
+                        onClick={previous}
+                    ></button>
+                    <button className="btn_arrow_right hidden md:block" onClick={next}></button>
                 </div>
-                <div className="pt-7 pb-4 text-64 leading-[84px]">
+                <div className="pt-3 md:pt-7 pb-2 md:pb-4 text-[24px] md:text-64 leading-[px] md:leading-[84px]">
                     <p>{slides[currentSlide].text1}</p>
                     <p className="font-semibold">{slides[currentSlide].text2}</p>
                 </div>
-                <div className="text-2xl leading-[34px]">
+                <div className="text-[16px] md:text-2xl leading-[-0.24px] md:leading-[34px]">
                     <p>{slides[currentSlide].text3}</p>
                     <p>{slides[currentSlide].text4}</p>
                 </div>
-                {/* 마우스 컨테이너 */}
             </div>
-            <div className="flex flex-col items-center absolute bottom-[2%] left-[50%]">
-                <div className="ic_scrolldown"></div>
+            {/* 마우스 컨테이너 */}
+            <div className="hidden md:block absolute bottom-[2%] left-[50%] translate-x-[-5px] flex flex-col items-center pb-[10px]">
+                <div class="flex flex-col items-center py-[4px] px-[10px] h-[27px] w-[3px] border-[1.5px] rounded-full box-content">
+                    <div className="scroller w-[2px] h-[7px] rounded-full bg-white"></div>
+                </div>
                 <div className="ic_scrolldown02"></div>
             </div>
         </div>

@@ -1,5 +1,10 @@
-import React, { Fragment, useState } from 'react'
-import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
+import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
+import {
+    ChevronDownIcon,
+    PhoneIcon,
+    PlayCircleIcon,
+    RectangleGroupIcon,
+} from "@heroicons/react/20/solid";
 import {
     Bars3Icon,
     ChartPieIcon,
@@ -7,49 +12,59 @@ import {
     FingerPrintIcon,
     SquaresPlusIcon,
     XMarkIcon,
-} from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon, RectangleGroupIcon } from '@heroicons/react/20/solid'
+} from "@heroicons/react/24/outline";
+import React, { Fragment, useState } from "react";
 
 const products = [
     {
-        name: 'Analytics',
-        description: 'Get a better understanding where your traffic is coming from',
-        href: '#',
+        name: "Analytics",
+        description: "Get a better understanding where your traffic is coming from",
+        href: "#",
         icon: ChartPieIcon,
     },
     {
-        name: 'Engagement',
-        description: 'Speak directly to your customers with our engagement tool',
-        href: '#',
+        name: "Engagement",
+        description: "Speak directly to your customers with our engagement tool",
+        href: "#",
         icon: CursorArrowRaysIcon,
     },
-    { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
     {
-        name: 'Integrations',
-        description: 'Your customers’ data will be safe and secure',
-        href: '#',
+        name: "Security",
+        description: "Your customers’ data will be safe and secure",
+        href: "#",
+        icon: FingerPrintIcon,
+    },
+    {
+        name: "Integrations",
+        description: "Your customers’ data will be safe and secure",
+        href: "#",
         icon: SquaresPlusIcon,
     },
-]
+];
 const callsToAction = [
-    { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-    { name: 'Contact sales', href: '#', icon: PhoneIcon },
-    { name: 'View all products', href: '#', icon: RectangleGroupIcon },
-]
+    { name: "Watch demo", href: "#", icon: PlayCircleIcon },
+    { name: "Contact sales", href: "#", icon: PhoneIcon },
+    { name: "View all products", href: "#", icon: RectangleGroupIcon },
+];
 
 function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
+    return classes.filter(Boolean).join(" ");
 }
 
 export default function Header() {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
-        <header className="group relative sticky top-0 isolate z-10">
-            <nav className="absolute 2xl:px-[200px] left-0 flex items-center justify-between bg-black-40 w-full hover:bg-white" aria-label="Global">
+        <header className="w-full group relative sticky top-0 isolate z-10 min-w-[375px]">
+            <nav
+                className="absolute 2xl:px-[200px] left-0 flex items-center justify-between bg-black-40 w-full hover:bg-white"
+                aria-label="Global"
+            >
                 <div className="flex lg:flex-1">
                     <div className="flex lg:flex-1 h-[88px]">
-                        <div className='deuNavDefaultLogo my-auto'></div>
+                        <div className="logo_white my-auto">
+                            <div className="logo mt-[3px] hidden group-hover:block"></div>
+                        </div>
                     </div>
                     <div className="flex lg:hidden">
                         <button
@@ -71,71 +86,115 @@ export default function Header() {
                             leave="transition ease-in duration-150"
                             leaveFrom="opacity-100 translate-y-0"
                             leaveTo="opacity-0 -translate-y-1"
-                        >
-                        </Transition>
+                        ></Transition>
                     </Popover>
-                        <ul className=''>
-                            <a href="" className="">
-                                <li className='mx-[50px] py-8 text-[20px] leading-6 text-white group-hover:text-black'>사업단소개</li>
+                    <ul className="hidden md:block">
+                        <a href="" className="">
+                            <li className="mx-[50px] py-8 text-[20px] leading-6 text-white group-hover:text-black">
+                                사업단소개
+                            </li>
+                        </a>
+                        <div className="leading-[56px] hidden group-hover:block">
+                            <a>
+                                <li className="pt-[16px]">인사말</li>
                             </a>
-                            <div className='leading-[56px] hidden group-hover:block'>
-                                <a><li className='pt-[16px]'>인사말</li></a>
-                                <a><li>조기취업형 계약학과 소개</li></a>
-                                <a><li>구성원 소개</li></a>
-                            </div>
-                        </ul>
-                        <ul>
+                            <a>
+                                <li>조기취업형 계약학과 소개</li>
+                            </a>
+                            <a>
+                                <li>구성원 소개</li>
+                            </a>
+                        </div>
+                    </ul>
+                    <ul className="hidden md:block">
+                        <a href="#" className="">
+                            <li className="mx-[50px] py-8 text-[20px] leading-6 text-white group-hover:text-black">
+                                참여기업현황
+                            </li>
+                        </a>
+                        <div className="leading-[56px] hidden group-hover:block">
+                            <a>
+                                <li className="pt-[16px]">참여기업현황</li>
+                            </a>
+                        </div>
+                    </ul>
+                    <ul className="hidden md:block">
+                        <a href="#" className="">
+                            <li className="mx-[50px] py-8 text-[20px] leading-6 text-white group-hover:text-black">
+                                학과소개
+                            </li>
+                        </a>
+                        <div className="leading-[56px] hidden group-hover:block">
+                            <a>
+                                <li className="pt-[16px]">학과소개</li>
+                            </a>
+                        </div>
+                    </ul>
+                    <ul className="hidden md:block">
+                        <a href="#" className="">
+                            <li className="mx-[50px] py-8 text-[20px] leading-6 text-white group-hover:text-black">
+                                입학안내
+                            </li>
+                        </a>
+                        <div className="leading-[56px] hidden group-hover:block">
+                            <a>
+                                <li className="pt-[16px]">신입생 모집요강</li>
+                            </a>
+                            <a>
+                                <li>장학 및 지원 혜택</li>
+                            </a>
+                            <a>
+                                <li>FAQ</li>
+                            </a>
+                            <a>
+                                <li>입학상담 Q&A</li>
+                            </a>
+                            <a>
+                                <li className="pb-[16px]">입학설명회</li>
+                            </a>
+                        </div>
+                    </ul>
+                    <ul className="hidden md:block">
+                        <a href="#" className="">
+                            <li className="mx-[50px] py-8 text-[20px] leading-6 text-white group-hover:text-black">
+                                창의융합교육센터
+                            </li>
+                        </a>
+                        <div className="leading-[56px] hidden group-hover:block">
+                            <a>
+                                <li className="pt-[16px]">창의융합교육센터</li>
+                            </a>
+                        </div>
+                    </ul>
+                    <ul className="hidden md:block">
+                        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
                             <a href="#" className="">
-                                <li className='mx-[50px] py-8 text-[20px] leading-6 text-white group-hover:text-black'>참여기업현황</li>
+                                <li className="mx-[50px] py-8 text-[20px] leading-6 text-white group-hover:text-black">
+                                    커뮤니티
+                                </li>
                             </a>
-                            <div className='leading-[56px] hidden group-hover:block'>
-                                <a><li className='pt-[16px]'>참여기업현황</li></a>
-                            </div>
-                        </ul>
-                        <ul>
-                            <a href="#" className="">
-                                <li className='mx-[50px] py-8 text-[20px] leading-6 text-white group-hover:text-black'>학과소개</li>
+                        </div>
+                        <div className="leading-[56px] hidden group-hover:block">
+                            <a>
+                                <li className="pt-[16px]">사업단 소식</li>
                             </a>
-                            <div className='leading-[56px] hidden group-hover:block'>
-                                <a><li className='pt-[16px]'>학과소개</li></a>
-                            </div>
-                        </ul>
-                        <ul>
-                            <a href="#" className="">
-                                <li className='mx-[50px] py-8 text-[20px] leading-6 text-white group-hover:text-black'>입학안내</li>
+                            <a>
+                                <li>공지사항</li>
                             </a>
-                            <div className='leading-[56px] hidden group-hover:block'>
-                                <a><li className='pt-[16px]'>신입생 모집요강</li></a>
-                                <a><li>장학 및 지원 혜택</li></a>
-                                <a><li>FAQ</li></a>
-                                <a><li>입학상담 Q&A</li></a>
-                                <a><li className='pb-[16px]'>입학설명회</li></a>
-                            </div>
-                        </ul>
-                        <ul>
-                            <a href="#" className="">
-                                <li className='mx-[50px] py-8 text-[20px] leading-6 text-white group-hover:text-black'>창의융합교육센터</li>
+                            <a>
+                                <li>문의하기</li>
                             </a>
-                            <div className='leading-[56px] hidden group-hover:block'>
-                                <a><li className='pt-[16px]'>창의융합교육센터</li></a>
-                            </div>
-                        </ul>
-                        <ul>
-                            <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                                <a href="#" className="">
-                                    <li className='mx-[50px] py-8 text-[20px] leading-6 text-white group-hover:text-black'>커뮤니티</li>
-                                </a>
-                            </div>
-                            <div className='leading-[56px] hidden group-hover:block'>
-                                <a><li className='pt-[16px]'>사업단 소식</li></a>
-                                <a><li>공지사항</li></a>
-                                <a><li>문의하기</li></a>
-                            </div>
-                        </ul>
+                        </div>
+                    </ul>
                     {/* </Popover.Group> */}
                 </div>
             </nav>
-            <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+            <Dialog
+                as="div"
+                className="lg:hidden"
+                open={mobileMenuOpen}
+                onClose={setMobileMenuOpen}
+            >
                 <div className="fixed inset-0 z-10" />
                 <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                     <div className="flex items-center justify-between">
@@ -165,7 +224,10 @@ export default function Header() {
                                             <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                                                 Product
                                                 <ChevronDownIcon
-                                                    className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
+                                                    className={classNames(
+                                                        open ? "rotate-180" : "",
+                                                        "h-5 w-5 flex-none"
+                                                    )}
                                                     aria-hidden="true"
                                                 />
                                             </Disclosure.Button>
@@ -228,5 +290,5 @@ export default function Header() {
                 </Dialog.Panel>
             </Dialog>
         </header>
-    )
+    );
 }

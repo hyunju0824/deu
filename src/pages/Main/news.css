@@ -1,0 +1,12 @@
+.slick-dots {
+  position: relative;
+  z-index: 5;
+  bottom: 15px;
+  padding-top: 50px;
+  /* background: #000; */
+}
+
+.slick-dots li {
+  width: 15px;
+  margin: 0;
+}

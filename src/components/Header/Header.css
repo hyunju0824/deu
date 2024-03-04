@@ -1,5 +1,12 @@
-.deuNavDefaultLogo {
-    background-image: url('../../assets/images/deuNavDefaultLogo.png');
+.logo {
+    background-image: url('../../assets/images/logo.png');
+    background-size: cover;
+    width: 293px;
+    height: 63px;
+}
+
+.logo_white {
+    background-image: url('../../assets/images/logo_white.svg');
     background-size: cover;
     width: 293px;
     height: 63px;
